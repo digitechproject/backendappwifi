@@ -5,7 +5,7 @@ define('FEDAPAY_API_KEY', 'wh_sandbox_7Oq3aUZ9bBkr44ueqCoC_j6e'); // Remplacez p
 define('FEDAPAY_WEBHOOK_SECRET', 'wh_sandbox_7Oq3aUZ9bBkr44ueqCoC_j6e'); // Remplacez par votre secret webhook Fedapay
 
 // Configuration du routeur Mikrotik
-define('MIKROTIK_IP', 'https://5473-102-38-154-155.ngrok-free.app/'); // Remplacez par l'adresse IP de votre routeur
+define('MIKROTIK_IP', 'https://6fa6-102-38-153-235.ngrok-free.app/'); // Remplacez par l'adresse IP de votre routeur
 define('MIKROTIK_USERNAME', 'admin'); // Remplacez par le nom d'utilisateur
 define('MIKROTIK_PASSWORD', 'Fernand0'); // Remplacez par le mot de passe
 
