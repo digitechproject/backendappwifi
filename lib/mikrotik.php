@@ -1,6 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../vendor/PEAR2_Net_RouterOS.phar'; // Inclure la bibliothèque MikroTik
+require_once __DIR__ . '/../vendor/PEAR2_Net_RouterOS-1.0.0b6.phar'; 
+ // Inclure la bibliothèque MikroTik
 
 use PEAR2\Net\RouterOS\Client;
 use PEAR2\Net\RouterOS\Request;

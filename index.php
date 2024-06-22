@@ -3,7 +3,7 @@
 require_once 'config.php';
 require_once 'lib/fedapay.php';
 require_once 'lib/mikrotik.php';
-require_once 'vendor/PEAR2_Net_RouterOS.phar';
+require_once 'vendor/PEAR2_Net_RouterOS-1.0.0b6.phar';
 
 use PEAR2\Net\RouterOS\Client;
 

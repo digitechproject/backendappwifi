@@ -19,7 +19,7 @@ function verifyFedapaySignature($payload, $signatureHeader) {
 function handleWebhookNotification($payload) {
     $event = Webhook::constructEvent($payload, $_SERVER['HTTP_X_FEDAPAY_SIGNATURE'], FEDAPAY_WEBHOOK_SECRET);
 
-    switch ($event->type) {
+    switch ($event->name) {
         case 'charge.succeeded':
             $transaction = $event->data['object'];
             $amount = $transaction['amount'];
@@ -46,7 +46,7 @@ function handleWebhookNotification($payload) {
 }
 
 // Route pour le webhook Fedapay
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/payment-notification') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $payload = file_get_contents('php://input');
 
     if (verifyFedapaySignature($payload, $_SERVER['HTTP_X_FEDAPAY_SIGNATURE'])) {
